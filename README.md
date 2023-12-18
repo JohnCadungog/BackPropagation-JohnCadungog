@@ -13,8 +13,12 @@ This project is a simple implementation of a neural network using backpropagatio
 
 USAGE
 -Run the application.
+
 -Click the "Create" button to initialize the neural network.
+
 -Click the "Train" button to train the neural network with predefined data.
+
 -Enter input values in the textboxes and click the "Test" button to test the neural network.
+
 -Click the "Save" button to save the weights of the neural network.
 
