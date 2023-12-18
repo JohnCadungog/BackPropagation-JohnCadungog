@@ -184,5 +184,29 @@ namespace BackPropagation_JohnCadungog
             nn.run();
             textBox5.Text = "" + nn.getOuputData(0);
         }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            if (nn != null)
+            {
+                saveFileDialog1.DefaultExt = "txt"; 
+                saveFileDialog1.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*"; 
+
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        nn.saveWeights(saveFileDialog1.FileName);
+                        MessageBox.Show("Weights saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error saving weights: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+      
     }
 }

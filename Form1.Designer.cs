@@ -46,6 +46,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // textBox1
@@ -94,9 +96,9 @@
             // 
             // buttonTest
             // 
-            this.buttonTest.Location = new System.Drawing.Point(595, 312);
+            this.buttonTest.Location = new System.Drawing.Point(585, 323);
             this.buttonTest.Name = "buttonTest";
-            this.buttonTest.Size = new System.Drawing.Size(75, 37);
+            this.buttonTest.Size = new System.Drawing.Size(85, 37);
             this.buttonTest.TabIndex = 6;
             this.buttonTest.Text = "Test ";
             this.buttonTest.UseVisualStyleBackColor = true;
@@ -213,11 +215,26 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Input D:";
             // 
+            // buttonSave
+            // 
+            this.buttonSave.Location = new System.Drawing.Point(468, 323);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(111, 37);
+            this.buttonSave.TabIndex = 18;
+            this.buttonSave.Text = "Save Weights";
+            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
+            // saveFileDialog1
+            // 
+          
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 513);
+            this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -263,6 +280,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
