@@ -23,11 +23,10 @@ namespace BackPropagation_JohnCadungog
 
         private void buttonCreate_Click(object sender, EventArgs e)
         {
-            nn = new NeuralNet(4, 2, 1);
+            nn = new NeuralNet(4, 1, 1);
             totalIterations = 0;
             numberOfClicks = 0;
             labelClicked.Text = numberOfClicks.ToString();
-      
             labelTotal.Text = totalIterations.ToString();
         }
 
